@@ -21,52 +21,52 @@ public Usuario(int id, String nombre, String apellido, String nombreUsuario, Str
     this.contrasena = contrasena;
 	}
 	
-	public int getid() {
+	public int getId() {
 		return id;
 				  }
 
-	public void setid(int id) {
+	public void setId(int id) {
 		this.id = id;
 					 }
 	
 	
-	public String getnombre() {
+	public String getNombre() {
 		return nombre;
 					  }
 		
-	public void setnombre(String nombre) {	
+	public void setNombre(String nombre) {	
 		this.nombre = nombre;
 							}
 	
-	public String getapellido() {
+	public String getApellido() {
 		return apellido;
 						}
 	
-	public void setapellido(String apellido) {
+	public void setApellido(String apellido) {
 		this.apellido = apellido;
 								}
 	
-	public String nombreUsuario () {
+	public String NombreUsuario () {
 		return nombreUsuario;
 	}
 	
-	public void nombreUsuario(String nombreUsuario) {
+	public void NombreUsuario(String nombreUsuario) {
 		this.nombreUsuario = nombreUsuario;
 	}
 	
-	public String rol() {
+	public String getRol() {
 		return rol;
 	}
 	
-	public void rol(String rol) {
+	public void setRol(String rol) {
 		this.rol = rol;
 	}
 	
-	public String contrasena () {
+	public String getContrasena () {
 		return contrasena;
 	}
 	
-	public void contrasena (String contrasena) {
+	public void setContrasena (String contrasena) {
 		this.contrasena =contrasena;
 	}
 	

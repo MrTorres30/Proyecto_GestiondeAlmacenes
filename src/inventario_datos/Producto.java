@@ -5,12 +5,12 @@ public class Producto {
 	private int id;
 	private String nombreProducto;
 	private String categoria;
-	private Double precio;
+	private double precio;
 	private int stock;
 	
 	public Producto ( ) {}
 	
-		public Producto (int id, String nombreProducto, String categoria, Double precio, int stock) {
+		public Producto (int id, String nombreProducto, String categoria, double precio, int stock) {
 	
 			this.id = id;
 			this.nombreProducto =nombreProducto;
@@ -19,45 +19,48 @@ public class Producto {
 			this.stock = stock;
 		}
 	
-		public int getid() {
+		public int getId() {
 			return id;
 						}
 
-		public void setid(int id) {
+		public void setId(int id) {
 			this.id = id;
 					 }
 	
-		public String getnombreProducto () {
+		public String getNombreProducto () {
 			return nombreProducto;
 									}
 				
-		public void setnombreProducto (String nombreProducto) {
+		public void setNombreProducto (String nombreProducto) {
 			this.nombreProducto = nombreProducto;
 													}
 		
-		public String getcategoria () {
+		public String getCategoria () {
 			return categoria;
 							}
 		
-		public void setcategoria (String categoria) {
+		public void setCategoria (String categoria) {
 			this.categoria = categoria;
 										}
 	
-		public Double getprecio() {
+		public Double getPrecio() {
 			return precio;		
 	}
 	
-		public void setprecio (Double precio) {
+		public void setPrecio (double precio) {
 			this.precio = precio;	
 	}
 	
-		public int getstock () {
+		public int getStock () {
 			return stock;
 	}
 	
-		public void setstock (int stock) {
+		public void setStock (int stock) {
 			this.stock = stock;
 	}
 	
+		@Override
+	    public String toString() {
+	        return "Producto [ID=" + id + ", Nombre=" + nombreProducto + ", Stock=" + stock + ", Precio=" + precio + "]";
+			}
 }
-	
