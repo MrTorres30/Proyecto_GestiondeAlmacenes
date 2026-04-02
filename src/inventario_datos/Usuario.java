@@ -75,19 +75,7 @@ public Usuario(int id, String nombre, String apellido, String nombreUsuario, Str
 	    return "Usuario [ID=" + id + ", Nombre=" + nombre + ", Usuario=" + nombreUsuario + ", Rol=" + rol + "]";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }
 
