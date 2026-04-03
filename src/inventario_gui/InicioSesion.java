@@ -1,4 +1,5 @@
 package inventario_gui;
+
 import javax.swing.*;
 import java.awt.Font;
 
@@ -41,12 +42,23 @@ public class InicioSesion extends JFrame {
         JButton btnEntrar = new JButton("Entrar");
         btnEntrar.setBounds(150, 220, 100, 35);
         add(btnEntrar);
-    }
+    
+		
+	btnEntrar.addActionListener(e -> {
+        String usuarioIngresado = txtUser.getText();
+        String claveIngresada = new String(txtPass.getPassword());
 
+        if (usuarioIngresado.equals("torresw") && claveIngresada.equals("12345")) {
+            JOptionPane.showMessageDialog(null, "¡Acceso concedido! Bienvenido al sistema.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Usuario o clave incorrectos", "Error de Acceso", JOptionPane.ERROR_MESSAGE);
+        }
+    });
+    
+} 
+	
     public static void main(String[] args) {
         InicioSesion ventana = new InicioSesion();
         ventana.setVisible(true);
     }
-    
-    
 }
