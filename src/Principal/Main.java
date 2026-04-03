@@ -5,6 +5,7 @@ import inventario_datos.Usuario;
 import inventario_datos.Producto;
 import inventario_datos.Proveedor;
 
+
 public class Main {
 
 	
