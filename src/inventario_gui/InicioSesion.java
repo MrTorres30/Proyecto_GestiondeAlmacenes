@@ -7,7 +7,7 @@ public class InicioSesion extends JFrame {
 	public InicioSesion() {
 	
 		setTitle("Acceso al Almacén");
-		setSize (400, 300);
+		setSize (400, 350);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setLayout(null);
@@ -15,24 +15,31 @@ public class InicioSesion extends JFrame {
 		
 		JLabel lblTitulo = new JLabel("INICIAR SESION", SwingConstants.CENTER);
 		lblTitulo.setFont(new Font ("Arial", Font.ITALIC, 20));
-		lblTitulo.setBounds(100, 20, 200, 30);
+		lblTitulo.setBounds(100, 30, 200, 30);
 		add(lblTitulo);
 	
 	
 	//-----------------------------------------------------
 		
 		JLabel lblUser = new JLabel("Usuario:");
-		lblUser.setBounds (50, 80, 80, 25);
+		lblUser.setBounds (50, 100, 80, 25);
 		add(lblUser);
 		
 		
 		JTextField txtUser = new JTextField();
-        txtUser.setBounds(110, 30, 150, 25);
+        txtUser.setBounds(140, 100, 150, 25);
         add(txtUser);
 
-        // 4. Botón
+        JLabel lblPass = new JLabel("Clave:");
+        lblPass.setBounds(50, 150, 80, 25); 
+        add(lblPass);
+        
+        JPasswordField txtPass = new JPasswordField();
+        txtPass.setBounds(140, 150, 150, 25);
+        add(txtPass);
+        
         JButton btnEntrar = new JButton("Entrar");
-        btnEntrar.setBounds(100, 80, 100, 30);
+        btnEntrar.setBounds(150, 220, 100, 35);
         add(btnEntrar);
     }
 
@@ -40,4 +47,6 @@ public class InicioSesion extends JFrame {
         InicioSesion ventana = new InicioSesion();
         ventana.setVisible(true);
     }
+    
+    
 }
