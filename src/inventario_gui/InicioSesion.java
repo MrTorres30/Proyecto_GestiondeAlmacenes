@@ -9,7 +9,7 @@ public class InicioSesion extends JFrame {
 	
 		setTitle("Acceso al Almacén");
 		setSize (400, 350);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);		
 		setLocationRelativeTo(null);
 		setLayout(null);
 	//---------------------------------------------------	
@@ -50,15 +50,17 @@ public class InicioSesion extends JFrame {
 
         if (usuarioIngresado.equals("torresw") && claveIngresada.equals("12345")) {
             JOptionPane.showMessageDialog(null, "¡Acceso concedido! Bienvenido al sistema.");
+       
+        Inventario ventanaPrincipal = new Inventario();
+        ventanaPrincipal.setVisible(true);
+        
+        this.dispose();
+        
         } else {
             JOptionPane.showMessageDialog(null, "Usuario o clave incorrectos", "Error de Acceso", JOptionPane.ERROR_MESSAGE);
         }
     });
-    
+	
 } 
 	
-    public static void main(String[] args) {
-        InicioSesion ventana = new InicioSesion();
-        ventana.setVisible(true);
-    }
 }

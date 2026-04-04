@@ -74,9 +74,4 @@ public Usuario(int id, String nombre, String apellido, String nombreUsuario, Str
 	public String toString() {
 	    return "Usuario [ID=" + id + ", Nombre=" + nombre + ", Usuario=" + nombreUsuario + ", Rol=" + rol + "]";
 	}
-	
-
-	
 }
-
-	

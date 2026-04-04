@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import inventario_datos.Usuario;
 import inventario_datos.Producto;
 import inventario_datos.Proveedor;
-
+import inventario_gui.InicioSesion;
 
 public class Main {
 
@@ -39,7 +39,7 @@ public class Main {
         for (Producto p : listaProductos) {
             valorTotal += (p.getPrecio() * p.getStock()); 
         }
-
+        
         System.out.println("VALOR TOTAL DE MERCANCÍA: RD$ %,.2f " + valorTotal);
         
         
@@ -52,8 +52,16 @@ public class Main {
         System.out.println("DIRECTORIO DE PROVEEDORES ACTIVOS:");
         for (Proveedor prov : listaProveedor) {
             System.out.println(prov.toString());
+            
+            
         }
         
+System.out.println("\n>>> Abriendo Interfaz Gráfica...");
         
+        // Creamos el objeto de la ventana
+        InicioSesion ventanaLogin = new InicioSesion();
+        
+        // La hacemos visible
+        ventanaLogin.setVisible(true); 
 	}
 }

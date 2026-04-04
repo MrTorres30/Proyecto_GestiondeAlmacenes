@@ -53,11 +53,5 @@ public class Inventario extends JFrame {
     modelo.addRow(new Object[]{4001, "Camisa Formal L", "Caballeros", 1250.0, 15});
     modelo.addRow(new Object[]{2002, "Jeans Slim Fit", "Damas", 1800.0, 22});
 	}
-	
-	
-	public static void main(String[] args) {
-        new Inventario().setVisible(true);
-    }
-	
-	
+
 }
